@@ -2,9 +2,11 @@
   background-color: #fff;
   width: 100%;
   padding-top: 3rem;
+  height: 500px;
 }
 .gridContainer {
   width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: row;
 }
@@ -18,7 +20,6 @@
   padding: 2rem 4rem;
   display: flex;
 }
-
 .redLine {
   width: 40px;
   height: 0px;
@@ -38,7 +39,6 @@
   flex-direction: column;
   align-items: flex-start;
 }
-
 .firstCol p {
   font-family: "Roboto";
   font-style: normal;
@@ -49,7 +49,6 @@
   color: #444444;
   padding: 1rem 0;
 }
-
 .bigTitle span {
   color: #d51820;
 }
@@ -58,7 +57,6 @@
   height: auto;
   display: flex;
 }
-
 .boxTitle {
   font-family: "Roboto";
   font-style: normal;
@@ -81,11 +79,11 @@
 }
 .col {
   flex: 33.33%;
-  height: 50vw;
+  height: 100%;
 }
 .authBox {
   background-color: red;
-  height: auto;
+  height: 50%;
   background: linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 2px)
       calc(100% - 2px) no-repeat,
     linear-gradient(315deg, #ff0000 0%, #f1f1f1 4%, #ffffff 56%);
@@ -98,7 +96,7 @@
 }
 .committedBox {
   background-color: pink;
-  height: auto;
+  height: 50%;
   background: linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 2px)
       calc(100% - 2px) no-repeat,
     linear-gradient(225deg, #ff0000 0%, #f1f1f1 4%, #ffffff 56%);
@@ -110,7 +108,7 @@
 }
 .awardBox {
   background-color: orange;
-  height: auto;
+  height: 50%;
   background: linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 2px)
       calc(100% - 2px) no-repeat,
     linear-gradient(45deg, #ff0000 0%, #f1f1f1 4%, #ffffff 56%);
@@ -122,7 +120,7 @@
 }
 .supportBox {
   background-color: grey;
-  height: auto;
+  height: 50%;
   background: linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 2px)
       calc(100% - 2px) no-repeat,
     linear-gradient(140deg, #ff0000 0%, #f1f1f1 4%, #ffffff 56%);
@@ -133,6 +131,9 @@
   padding: 1rem;
 }
 @media screen and (max-width: 769px) {
+  .valuesContainer {
+    height: auto;
+  }
   .gridContainer {
     flex-direction: column;
   }
@@ -154,6 +155,7 @@
   .supportBox {
     align-items: flex-start;
     padding: 4rem;
+    height: auto;
   }
   .bigTitle {
     font-family: "Roboto";
@@ -168,7 +170,6 @@
     flex-direction: row;
     align-items: center;
   }
-
   .firstCol p {
     text-align: center;
   }
@@ -178,7 +179,6 @@
     width: 100px;
     height: 100px;
   }
-
   .col {
     display: flex;
     flex-direction: column;

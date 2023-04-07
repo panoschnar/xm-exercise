@@ -1,7 +1,6 @@
 import React from "react";
 import styles from "./Values.module.css";
 import { AuthIcon, HumansIcon, SupportIcon, TrophieIcon } from "./ValuesIcons";
-
 const Values = () => {
   return (
     <div className={styles.valuesContainer}>
@@ -15,9 +14,9 @@ const Values = () => {
             <div>
               Fair<span>.</span>
             </div>
-          <div>
-          Human<span>.</span>
-          </div>
+            <div>
+              Human<span>.</span>
+            </div>
           </div>
           <p>
             Learn why <b>over 5 million clients choose XM </b>as their trusted
@@ -53,7 +52,6 @@ const Values = () => {
               </p>
             </div>
             <div className={styles.supportBox}>
-              {" "}
               <div>{SupportIcon}</div>
               <h3 className={styles.boxTitle}>24/7 Support</h3>
               <p className={styles.boxText}>

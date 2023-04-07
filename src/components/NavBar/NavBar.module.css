@@ -6,7 +6,6 @@
   align-items: center;
   justify-content: center;
 }
-
 .navLinks {
   font-family: "Roboto", sans-serif;
   font-style: normal;
@@ -15,23 +14,18 @@
   line-height: 18px;
   display: none;
   gap: 1rem;
-}
+  color: #ffffff;
+} 
 
-/* Tablet */
 @media (min-width: 768px) {
-   
+} 
 
-}
-
-/* Laptop */
 @media (min-width: 1200px) {
-    .navbarContainer {
-        justify-content: space-between;
-        padding: 0 10rem;
-
-    }
-    .navLinks {
-        display: flex;
-    }
-
+  .navbarContainer {
+    justify-content: space-between;
+    padding: 0 10rem;
+  }
+  .navLinks {
+    display: flex;
+  }
 }

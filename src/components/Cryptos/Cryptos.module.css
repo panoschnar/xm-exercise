@@ -6,7 +6,6 @@
   z-index: 1;
   margin-top: 4rem;
 }
-
 .cryptoBox {
   box-sizing: border-box;
   width: 236px;
@@ -16,7 +15,6 @@
   border-radius: 13.0706px;
   padding: 1rem;
 }
-
 .cryptoBoxHeader {
   display: flex;
   flex-direction: row;
@@ -25,7 +23,6 @@
   font-family: "Roboto";
   font-style: normal;
 }
-
 .cryptoBoxHeader div {
   display: flex;
   align-items: center;
@@ -43,7 +40,6 @@
   color: #000000;
   text-shadow: 0px 0px 60.125px #ffc255;
 }
-
 .line {
   margin: 1rem 0;
   height: 1px;
@@ -59,7 +55,15 @@
   color: #ffffff;
   text-shadow: 0px 0px 60.125px #ffc255;
 }
-
+.symbolText {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 13.3547px;
+  line-height: 120%;
+  color: #ffffff;
+  text-shadow: 0px 0px 65.8195px #ffc255;
+}
 .rateBox {
   display: flex;
   flex-direction: row;
@@ -75,7 +79,6 @@
   color: #b1ffc2;
   text-shadow: 0px 0px 60.125px #ffc255;
 }
-
 .rateDown {
   color: #ffa3a6;
   font-family: "Roboto";
@@ -90,4 +93,16 @@
   font-style: normal;
   font-weight: 400;
   font-size: 7.84239px;
+}
+@media screen and (min-width: 768px) {
+  .cryptosContainer {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .cryptosContainer {
+    flex-direction: row;
+  }
 }

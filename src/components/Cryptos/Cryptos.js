@@ -6,26 +6,20 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import axios from "axios";
-
 const Cryptos = () => {
   const [cryptoData, setCryptoData] = useState();
-
   useEffect(() => {
     const fetchData = async () => {
       const result = await axios("https://api.coinlore.net/api/tickers/");
-
       setCryptoData(result.data);
     };
-
     fetchData();
   }, []);
-
-  console.log(cryptoData);
   return (
     <div className={styles.cryptosContainer}>
       {cryptoData ? (
-        cryptoData.data.slice(0, 5).map((item) => (
-          <div className={styles.cryptoBox}>
+        cryptoData.data.slice(0, 5).map((item, idx) => (
+          <div key={idx} className={styles.cryptoBox}>
             <div className={styles.cryptoBoxHeader}>
               <svg
                 width="34"
@@ -34,7 +28,7 @@ const Cryptos = () => {
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g clip-path="url(#clip0_9_1072)">
+                <g clipPath="url(#clip0_9_1072)">
                   <path
                     d="M29.0219 29.8739C35.6608 23.0397 35.6608 11.9593 29.0219 5.12515C22.383 -1.70902 11.6192 -1.70902 4.98028 5.12515C-1.65863 11.9593 -1.65863 23.0397 4.98028 29.8739C11.6192 36.708 22.383 36.708 29.0219 29.8739Z"
                     fill="#F7931A"
@@ -50,13 +44,13 @@ const Cryptos = () => {
                   </clipPath>
                 </defs>
               </svg>
-              <p>{item.symbol}</p>
+              <p className={styles.symbolText}>{item.symbol}</p>
               <div>{item.name}</div>
             </div>
             <hr className={styles.line} />
             <p className={styles.cryptoPrice}>$ {item.price_usd}</p>
             <div
-              className={`${styles.rateBox}  ${
+              className={`${styles.rateBox} ${
                 item.percent_change_24h > 0 ? styles.rateUp : styles.rateDown
               }`}
             >
@@ -71,7 +65,6 @@ const Cryptos = () => {
                   icon={faCircleChevronDown}
                 />
               )}
-
               <p>{item.percent_change_24h}%</p>
             </div>
           </div>
@@ -82,5 +75,4 @@ const Cryptos = () => {
     </div>
   );
 };
-
 export default Cryptos;
