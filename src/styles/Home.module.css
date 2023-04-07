@@ -1,10 +1,27 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  padding: 6rem;
   min-height: 100vh;
+  background-image: url("../../public/img/mobile-bg.png");
+  background-position: 55% 0%;
+  background-size: 190%;
+  background-repeat: no-repeat;
+}
+
+.tintHeader{
+  background: linear-gradient(
+    180deg,
+    rgba(32, 46, 71, 0.65) 36.53%,
+    rgba(32, 46, 71, 0.6175) 57.69%,
+    rgba(32, 46, 71, 0.585) 78.84%,
+    rgba(32, 46, 71, 0) 100%
+  );
+  mix-blend-mode: multiply;
+  height: 615px;
+  width: 100%;
+  position: absolute;
+  z-index: 0;
 }
 
 .description {
@@ -173,8 +190,14 @@
   }
 }
 
-/* Mobile */
-@media (max-width: 700px) {
+/* tablet */
+@media (min-width: 768px) {
+  .main{
+    background-image: url("../../public/img/tablet-bg.png");
+    background-position: 60% 0%;
+    background-size: 120%;
+    background-repeat: 'no-repeat';
+  }
   .content {
     padding: 4rem;
   }

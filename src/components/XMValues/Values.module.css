@@ -1,0 +1,200 @@
+.valuesContainer {
+  background-color: #fff;
+  width: 100%;
+  padding-top: 3rem;
+}
+.gridContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+.firstCol {
+  width: 33.33%;
+  height: auto;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2rem 4rem;
+  display: flex;
+}
+
+.redLine {
+  width: 40px;
+  height: 0px;
+  border: 4px solid #d51820;
+}
+.bigTitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 80px;
+  line-height: 90px;
+  letter-spacing: -0.02em;
+  color: #444444;
+  margin-top: 1rem;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.firstCol p {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: start;
+  color: #444444;
+  padding: 1rem 0;
+}
+
+.bigTitle span {
+  color: #d51820;
+}
+.secondCol {
+  width: 66.66%;
+  height: auto;
+  display: flex;
+}
+
+.boxTitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 19.7734px;
+  line-height: 23px;
+  text-align: center;
+  color: #444444;
+  margin: 0.5rem 0;
+}
+.boxText {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #444444;
+  padding: 0 1rem;
+}
+.col {
+  flex: 33.33%;
+  height: 50vw;
+}
+.authBox {
+  background-color: red;
+  height: auto;
+  background: linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 2px)
+      calc(100% - 2px) no-repeat,
+    linear-gradient(315deg, #ff0000 0%, #f1f1f1 4%, #ffffff 56%);
+  box-sizing: border-box;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.committedBox {
+  background-color: pink;
+  height: auto;
+  background: linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 2px)
+      calc(100% - 2px) no-repeat,
+    linear-gradient(225deg, #ff0000 0%, #f1f1f1 4%, #ffffff 56%);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.awardBox {
+  background-color: orange;
+  height: auto;
+  background: linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 2px)
+      calc(100% - 2px) no-repeat,
+    linear-gradient(45deg, #ff0000 0%, #f1f1f1 4%, #ffffff 56%);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+.supportBox {
+  background-color: grey;
+  height: auto;
+  background: linear-gradient(#ffffff, #ffffff) 50% 50% / calc(100% - 2px)
+      calc(100% - 2px) no-repeat,
+    linear-gradient(140deg, #ff0000 0%, #f1f1f1 4%, #ffffff 56%);
+  box-sizing: content-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+}
+@media screen and (max-width: 769px) {
+  .gridContainer {
+    flex-direction: column;
+  }
+  .firstCol {
+    width: 100%;
+    align-items: center;
+  }
+  .secondCol {
+    width: 100%;
+  }
+  .boxText,
+  .boxTitle {
+    text-align: start;
+    padding: 0;
+  }
+  .authBox,
+  .awardBox,
+  .committedBox,
+  .supportBox {
+    align-items: flex-start;
+    padding: 4rem;
+  }
+  .bigTitle {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 900;
+    font-size: 41.8812px;
+    line-height: 48px;
+    color: #444444;
+    margin-top: 1rem;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .firstCol p {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 426px) {
+  .contentBox {
+    width: 100px;
+    height: 100px;
+  }
+
+  .col {
+    display: flex;
+    flex-direction: column;
+  }
+  .secondCol {
+    flex-direction: column;
+  }
+  .authBox,
+  .awardBox,
+  .committedBox,
+  .supportBox {
+    background: none;
+    align-items: center;
+  }
+  .boxText,
+  .boxTitle {
+    text-align: center;
+  }
+}

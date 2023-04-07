@@ -1,0 +1,127 @@
+.registerContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 80%;
+  margin-top: 2rem;
+}
+.title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 111.9%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.subTitle {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.calendarBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.form {
+  margin-top: 2rem;
+}
+
+.inputLabel {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  color: #ffffff;
+}
+
+.inputField {
+  height: 40px;
+  width: 100%;
+  margin: 0.5rem 0;
+  background: #f7f7f7;
+  border: 1px solid #a9a9a9;
+}
+
+.passInfo {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 12px;
+  list-style: circle;
+  color: #888888;
+  margin-left: 15px;
+  margin-bottom: 2rem;
+}
+
+.registerBtn {
+  background: #cccccc;
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 100;
+  font-size: 24px;
+  line-height: 27px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 98%;
+  border: none;
+  padding: 0.4rem 0;
+}
+.error {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  color: #d51820;
+  margin-bottom: 10px;
+}
+
+.newAccountText {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.newAccountText a {
+  text-decoration: underline;
+  color: #d51820;
+}
+
+.termsText {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.termsText a,
+.termsText span {
+  color: #d51820;
+}

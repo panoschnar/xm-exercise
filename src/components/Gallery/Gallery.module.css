@@ -1,0 +1,53 @@
+.sliderContainer {
+  width: 100%;
+  height: 450px;
+  background-color: #F4F4F4;
+  padding:3rem;
+  margin-top: 3rem;
+}
+.box {
+  height: 200px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+}
+.contentBox {
+  display: flex;
+  width: 250px;
+  height: 250px;
+  justify-content: center;
+  align-items: center;
+  background: #dadada;
+  border: 1px solid #fff;
+}
+.title {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 30px;
+  line-height: 39px;
+  text-align: center;
+  color: #252525;
+}
+@media screen and (max-width: 769px) {
+  .contentBox {
+    width: 130px;
+    height: 130px;
+  }
+  .sliderContainer {
+    height: 380px;
+
+  }
+}
+@media screen and (max-width: 425px) {
+  .contentBox {
+    width: 100px;
+    height: 100px;
+  }
+  .sliderContainer {
+    height: 350px;
+
+  }
+}
